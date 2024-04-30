@@ -24,6 +24,9 @@ sigs:
     - github: jpbetz
       name: Joe Betz
       company: Google
+    - github: sttts
+      name: Stefan Schimanski
+      company: Upbound
   meetings:
   - description: Kubebuilder Meeting
     day: Thursday
@@ -238,6 +241,7 @@ sigs:
       StatefulSet kinds
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/jobset/main/OWNERS
+    - https://raw.githubusercontent.com/kubernetes-sigs/lws/main/OWNERS
     - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/apps/OWNERS
     - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/batch/OWNERS
     - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/core/v1/OWNERS
@@ -346,6 +350,10 @@ sigs:
       github: BenTheElder
       name: Benjamin Elder
   subprojects:
+  - name: apisnoop
+    description: Snooping on the Kubernetes OpenAPI communications
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/apisnoop/main/OWNERS
   - name: architecture-and-api-governance
     description: '[Described below](#architecture-and-api-governance-1)'
     owners:
@@ -414,11 +422,11 @@ sigs:
     - github: deads2k
       name: David Eads
       company: Red Hat
+    - github: enj
+      name: Mo Khan
+      company: Microsoft
     - github: liggitt
       name: Jordan Liggitt
-      company: Google
-    - github: mikedanese
-      name: Mike Danese
       company: Google
     emeritus_leads:
     - github: ericchiang
@@ -567,6 +575,11 @@ sigs:
       mailing_list: https://groups.google.com/forum/#!forum/kubernetes-secrets-store-csi-driver
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/secrets-store-csi-driver/master/OWNERS
+  - name: secrets-store-sync-controller
+    description: |
+      This is a Kubernetes controller that watches for changes to a custom resource and syncs the secrets from external secrets-store as Kubernetes secret.
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/secrets-store-sync-controller/main/OWNERS
   - name: service-accounts
     description: |
       Infrastructure implementing Kubernetes service account based workload identity.
@@ -595,9 +608,12 @@ sigs:
     - github: gjtempleton
       name: Guy Templeton
       company: Skyscanner
+    - github: maciekpytel
+      name: Maciek Pytel
+      company: Google
+    emeritus_leads:
     - github: mwielgus
       name: Marcin Wielgus
-      company: Google
   meetings:
   - description: Regular SIG Meeting
     day: Monday
@@ -638,6 +654,9 @@ sigs:
     owners:
     - https://raw.githubusercontent.com/kubernetes/api/master/autoscaling/OWNERS
     - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/podautoscaler/OWNERS
+  - name: karpenter
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/karpenter/main/OWNERS
   - name: vertical-pod-autoscaler
     owners:
     - https://raw.githubusercontent.com/kubernetes/autoscaler/master/vertical-pod-autoscaler/OWNERS
@@ -653,30 +672,28 @@ sigs:
   label: cli
   leadership:
     chairs:
-    - github: KnVerey
-      name: Katrina Verey
+    - github: ardaguclu
+      name: Arda Guclu
+      company: Red Hat
+    - github: mpuckett159
+      name: Marly Puckett
       company: Independent
-    - github: eddiezane
-      name: Eddie Zaneski
-      company: Chainguard, Inc
-    - github: natasha41575
-      name: Natasha Sarkar
-      company: Google
     tech_leads:
-    - github: KnVerey
-      name: Katrina Verey
-      company: Independent
     - github: eddiezane
       name: Eddie Zaneski
-      company: Chainguard, Inc
+      company: Defense Unicorns
     - github: soltysh
       name: Maciej Szulik
       company: Red Hat
     emeritus_leads:
     - github: AdoHe
       name: Tony Ado
+    - github: KnVerey
+      name: Katrina Verey
     - github: fabianofranz
       name: Fabiano Franz
+    - github: natasha41575
+      name: Natasha Sarkar
     - github: pwittrock
       name: Phillip Wittrock
     - github: seans3
@@ -783,6 +800,10 @@ sigs:
       slack: kustomize
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/OWNERS
+    leads:
+    - github: koba1t
+      name: Yugo Kobayashi
+      company: LY Corporation
 - dir: sig-cloud-provider
   name: Cloud Provider
   mission_statement: >
@@ -921,9 +942,6 @@ sigs:
       url: https://zoom.us/j/586836662
       archive_url: https://docs.google.com/document/d/1SpxvmOgHDhnA72Z0lbhBffrfe9inQxZkU9xqlafOW9k/edit
       recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP2JNdHwB8GxRs2mikK7zyc4
-  - name: provider-baiducloud
-    owners:
-    - https://raw.githubusercontent.com/kubernetes-sigs/cloud-provider-baiducloud/master/OWNERS
   - name: provider-equinix-metal
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/cloud-provider-equinix-metal/main/OWNERS
@@ -1012,13 +1030,12 @@ sigs:
       name: Vince Prignano
       company: Red Hat
     tech_leads:
-    - github: CecileRobertMichon
-      name: Cecile Robert-Michon
-      company: Microsoft
     - github: fabriziopandini
       name: Fabrizio Pandini
       company: VMware
     emeritus_leads:
+    - github: CecileRobertMichon
+      name: Cecile Robert-Michon
     - github: luxas
       name: Lucas Käldström
     - github: roberthbailey
@@ -1068,6 +1085,7 @@ sigs:
       mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/cluster-api/main/OWNERS
+    - https://raw.githubusercontent.com/kubernetes-sigs/logical-cluster/main/OWNERS
     meetings:
     - description: Cluster API office hours
       day: Wednesday
@@ -1075,7 +1093,7 @@ sigs:
       tz: PT (Pacific Time)
       frequency: weekly
       url: https://zoom.us/j/861487554?pwd=dTVGVVFCblFJc0VBbkFqQlU0dHpiUT09
-      archive_url: https://docs.google.com/document/d/1ushaVqAKYnZ2VN_aa3GyKlS4kEd6bSug13xaXOakAQI/edit
+      archive_url: https://cluster-api.sigs.k8s.io/agenda
       recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP29D0nYgAGWt1ZFqS9Z7lw4
   - name: cluster-api-addon-provider-helm
     description: Implementation of Cluster Add-on Provider for Helm, an add-on orchestration
@@ -1246,7 +1264,7 @@ sigs:
       tz: PT (Pacific Time)
       frequency: biweekly starting Thursday June 25th, 2020
       url: https://zoom.us/j/92253194848?pwd=cVVVNDMxeTl1QVJPUlpvLzNSVU1JZz09
-      archive_url: https://docs.google.com/document/d/1jQrQiOW75uWraPk4b_LWtCTHwT7EZwrWWwMdxeWOEvk/edit?usp=sharing
+      archive_url: https://docs.google.com/document/d/15CD2VOdkCAEcq2mm5FVoPO8M4-0a2SA2ajHLFBYqz7c/edit?usp=sharing
       recordings_url: https://www.youtube.com/playlist?list=PLutJyDdkKQIovV-AONxMa2cyv-_5LAYiu
   - name: etcdadm
     description: A command-line tool for operating etcd clusters
@@ -1329,12 +1347,6 @@ sigs:
       mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/OWNERS
-  - name: logical-cluster
-    description: A set of APIs to improve the Kubernetes user experience for cluster
-      administration by offering utilities to interact with fleet of clusters which
-      can be managed by Cluster API, or other entities (like cloud providers).
-    owners:
-    - https://raw.githubusercontent.com/kubernetes-sigs/logical-cluster/main/OWNERS
   - name: minikube
     description: Implements a local Kubernetes cluster for application development
       on macOS, Linux, and Windows
@@ -1365,14 +1377,8 @@ sigs:
   label: contributor-experience
   leadership:
     chairs:
-    - github: jberkus
-      name: Josh Berkus
-      company: Red Hat
     - github: kaslin
       name: Kaslin Fields
-      company: Google
-    - github: mrbobbytables
-      name: Bob Killen
       company: Google
     - github: palnabarun
       name: Nabarun Pal
@@ -1384,12 +1390,6 @@ sigs:
     - github: Priyankasaggu11929
       name: Priyanka Saggu
       company: SUSE
-    - github: cblecker
-      name: Christoph Blecker
-      company: Red Hat
-    - github: nikhita
-      name: Nikhita Raghunath
-      company: VMware
     emeritus_leads:
     - github: Phillels
       name: Elsie Phillips
@@ -1397,8 +1397,16 @@ sigs:
       name: Alison Dowdney
     - github: castrojo
       name: Jorge Castro
+    - github: cblecker
+      name: Christoph Blecker
     - github: grodrigues3
       name: Garrett Rodrigues
+    - github: jberkus
+      name: Josh Berkus
+    - github: mrbobbytables
+      name: Bob Killen
+    - github: nikhita
+      name: Nikhita Raghunath
     - github: parispittman
       name: Paris Pittman
   meetings:
@@ -1535,14 +1543,8 @@ sigs:
       company: Cisco
     - github: reylejano
       name: Rey Lejano
-      company: SUSE
+      company: Red Hat
     tech_leads:
-    - github: kbhawkey
-      name: Karen Bradshaw
-      company: Independent
-    - github: onlydole
-      name: Taylor Dolezal
-      company: CNCF
     - github: sftim
       name: Tim Bannister
       company: The Scale Factory
@@ -1562,6 +1564,10 @@ sigs:
       name: Jim Angel
     - github: kbarnard10
       name: Kaitlyn Barnard
+    - github: kbhawkey
+      name: Karen Bradshaw
+    - github: onlydole
+      name: Taylor Dolezal
     - github: zacharysarah
       name: Zach Corleissen
   meetings:
@@ -1716,10 +1722,14 @@ sigs:
       github: mrbobbytables
       name: Bob Killen
   subprojects:
+  - name: auger
+    description: Directly access data objects stored in etcd by kubernetes.
+    owners:
+    - https://raw.githubusercontent.com/etcd-io/auger/master/OWNERS
   - name: bbolt
     description: An embedded key/value database for Go.
     owners:
-    - https://raw.githubusercontent.com/etcd-io/bbolt/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/bbolt/main/OWNERS
   - name: cetcd
     description: Serve Consul with etcd
     owners:
@@ -1731,16 +1741,16 @@ sigs:
   - name: discovery.etcd.io
     description: Kubernetes manifests powering discovery.etcd.io
     owners:
-    - https://raw.githubusercontent.com/etcd-io/discovery.etcd.io/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/discovery.etcd.io/master/OWNERS
   - name: discoveryserver
     description: Public etcd Discovery Service
     owners:
-    - https://raw.githubusercontent.com/etcd-io/discoveryserver/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/discoveryserver/master/OWNERS
   - name: etcd
     description: Distributed reliable key-value store for the most critical data of
       a distributed system
     owners:
-    - https://raw.githubusercontent.com/etcd-io/etcd/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/etcd/main/OWNERS
   - name: etcd-play
     description: etcd playground
     owners:
@@ -1752,15 +1762,15 @@ sigs:
   - name: gofail
     description: failpoints for go
     owners:
-    - https://raw.githubusercontent.com/etcd-io/gofail/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/gofail/master/OWNERS
   - name: govanityurls
     description: Use a custom domain in your Go import path
     owners:
-    - https://raw.githubusercontent.com/etcd-io/govanityurls/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/govanityurls/master/OWNERS
   - name: jetcd
     description: etcd java client
     owners:
-    - https://raw.githubusercontent.com/etcd-io/jetcd/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/jetcd/main/OWNERS
   - name: maintainers
     description: issue tracking for project wide non-code concerns
     owners:
@@ -1768,15 +1778,15 @@ sigs:
   - name: protodoc
     description: protodoc generates Protocol Buffer documentation.
     owners:
-    - https://raw.githubusercontent.com/etcd-io/protodoc/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/protodoc/master/OWNERS
   - name: raft
     description: Raft library for maintaining a replicated state machine
     owners:
-    - https://raw.githubusercontent.com/etcd-io/raft/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/raft/main/OWNERS
   - name: website
     description: etcd-io
     owners:
-    - https://raw.githubusercontent.com/etcd-io/website/master/MAINTAINERS
+    - https://raw.githubusercontent.com/etcd-io/website/main/OWNERS
   - name: zetcd
     description: Serve the Apache Zookeeper API but back it with an etcd cluster
     owners:
@@ -1793,12 +1803,12 @@ sigs:
   label: instrumentation
   leadership:
     chairs:
-    - github: ehashman
-      name: Elana Hashman
-      company: Apple
     - github: logicalhan
       name: Han Kang
       company: Google
+    - github: rexagod
+      name: Pranshu Srivastava
+      company: Red Hat
     tech_leads:
     - github: dashpole
       name: David Ashpole
@@ -1809,6 +1819,8 @@ sigs:
     emeritus_leads:
     - github: brancz
       name: Frederic Branczyk
+    - github: ehashman
+      name: Elana Hashman
     - github: piosz
       name: Piotr Szczesniak
   meetings:
@@ -1905,15 +1917,22 @@ sigs:
       name: Davanum Srinivas
       company: Amazon
     tech_leads:
-    - github: spiffxp
-      name: Aaron Crickenberger
+    - github: BenTheElder
+      name: Benjamin Elder
       company: Google
-    - github: thockin
-      name: Tim Hockin
-      company: Google
+    - github: ameukam
+      name: Arnaud Meukam
+      company: VMware
+    - github: upodroid
+      name: Mahamed Ali
+      company: Cisco
     emeritus_leads:
     - github: bartsmykla
       name: Bart Smykla
+    - github: spiffxp
+      name: Aaron Crickenberger
+    - github: thockin
+      name: Tim Hockin
   meetings:
   - description: Regular SIG Meeting
     day: Wednesday
@@ -2121,6 +2140,9 @@ sigs:
       name: Tim Hockin
       company: Google
     tech_leads:
+    - github: aojea
+      name: Antonio Ojea
+      company: Google
     - github: danwinship
       name: Dan Winship
       company: Red Hat
@@ -2242,6 +2264,9 @@ sigs:
   - name: iptables-wrappers
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/iptables-wrappers/master/OWNERS
+  - name: knftables
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/knftables/master/OWNERS
   - name: kpng
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/kpng/master/OWNERS
@@ -2252,8 +2277,12 @@ sigs:
     contact:
       slack: sig-network-policy-api
     owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/kube-network-policies/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/network-policy-api/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes/api/master/networking/OWNERS
+  - name: node-ipam-controller
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/node-ipam-controller/main/OWNERS
   - name: pod-networking
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/ip-masq-agent/master/OWNERS
@@ -2471,7 +2500,9 @@ sigs:
     - https://raw.githubusercontent.com/kubernetes-sigs/bom/main/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/downloadkubernetes/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/mdtoc/master/OWNERS
+    - https://raw.githubusercontent.com/kubernetes-sigs/obscli/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/promo-tools/main/OWNERS
+    - https://raw.githubusercontent.com/kubernetes-sigs/release-actions/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/release-notes/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/release-sdk/main/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/release-utils/main/OWNERS
@@ -2487,6 +2518,10 @@ sigs:
     - https://raw.githubusercontent.com/kubernetes/sig-release/master/release-engineering/OWNERS
     - https://raw.githubusercontent.com/kubernetes/website/main/content/en/releases/OWNERS
     - https://raw.githubusercontent.com/kubernetes/website/main/data/releases/OWNERS
+    leads:
+    - github: xmudrii
+      name: Marko Mudrinić
+      company: Kubermatic
   - name: Release Team
     description: |
       The Kubernetes Release Team is responsible for the day-to-day work required to successfully create releases of Kubernetes.
@@ -2506,6 +2541,12 @@ sigs:
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/release-team-shadow-stats/main/OWNERS
     - https://raw.githubusercontent.com/kubernetes/sig-release/master/release-team/OWNERS
+    leads:
+    - github: gracenng
+      name: Grace Nguyen
+    - github: katcosgrove
+      name: Kat Cosgrove
+      company: Dell
   - name: SIG Release Process Documentation
     description: |
       Documents and processes related to SIG Release
@@ -2641,22 +2682,22 @@ sigs:
     url: https://zoom.us/j/841218129
     archive_url: https://docs.google.com/document/d/13mwye7nvrmV11q9_Eg77z-1w3X7Q1GTbslpml4J7F3A/edit
     recordings_url: https://www.youtube.com/watch?v=PweKj6SU7UA&list=PL69nYSiGNLP2vwzcCOhxrL3JVBc-eaJWI
-  - description: descheduler biweekly meeting
+  - description: descheduler biweekly meeting Europe time
     day: Tuesday
-    time: "17:00"
-    tz: UTC
-    frequency: biweekly starting Tuesday September 13, 2022
+    time: "14:30"
+    tz: CET
+    frequency: biweekly starting Tuesday Feb 27, 2024
     url: https://zoom.us/j/841218129
     archive_url: https://docs.google.com/document/d/1Ang5shAFxuylO2RXMFGO7uxSe-IX3Y3PxoKIn1yPIEQ
     recordings_url: https://youtube.com/playlist?list=PLEafaZMk8MYYqoSncOkL8uutIcTsUQE_g
-  - description: monthly meeting (APAC)
-    day: first Thursday
-    time: "02:00"
-    tz: UTC
-    frequency: monthly
+  - description: descheduler biweekly meeting North America time
+    day: Tuesday
+    time: "19:30"
+    tz: CET
+    frequency: biweekly starting Tuesday March 12, 2024
     url: https://zoom.us/j/841218129
-    archive_url: https://docs.google.com/document/d/13mwye7nvrmV11q9_Eg77z-1w3X7Q1GTbslpml4J7F3A/edit
-    recordings_url: https://www.youtube.com/watch?v=PweKj6SU7UA&list=PL69nYSiGNLP2vwzcCOhxrL3JVBc-eaJWI
+    archive_url: https://docs.google.com/document/d/1Ang5shAFxuylO2RXMFGO7uxSe-IX3Y3PxoKIn1yPIEQ
+    recordings_url: https://youtube.com/playlist?list=PLEafaZMk8MYYqoSncOkL8uutIcTsUQE_g
   contact:
     slack: sig-scheduling
     mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-scheduling
@@ -2839,6 +2880,9 @@ sigs:
       github: pacoxu
       name: Paco Xu 徐俊杰
   subprojects:
+  - name: external-snapshot-metadata
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-csi/external-snapshot-metadata/main/OWNERS
   - name: external-storage
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/sig-storage-lib-external-provisioner/master/OWNERS
@@ -2856,7 +2900,6 @@ sigs:
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/container-object-storage-interface-api/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/container-object-storage-interface-controller/master/OWNERS
-    - https://raw.githubusercontent.com/kubernetes-sigs/container-object-storage-interface-csi-adapter/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/container-object-storage-interface-provisioner-sidecar/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/container-object-storage-interface-spec/master/OWNERS
     - https://raw.githubusercontent.com/kubernetes-sigs/cosi-driver-sample/master/OWNERS
@@ -2946,6 +2989,12 @@ sigs:
     - github: timothysc
       name: Timothy St. Clair
   meetings:
+  - description: Hydrophone Office Hours
+    day: Tuesday
+    time: "13:00"
+    tz: PT (Pacific Time)
+    frequency: bi-weekly starting Tuesday April 16, 2024
+    url: https://zoom.us/j/92022289212?pwd=VU5UWEtuU3ZYTmlYS3hSU3hLbTA0Zz09
   - description: SIG Testing Bi-Weekly Meeting
     day: Tuesday
     time: "10:00"
@@ -2982,6 +3031,11 @@ sigs:
       An experimental e2e testing framework for Kubernetes clusters.
     owners:
     - https://raw.githubusercontent.com/kubernetes-sigs/e2e-framework/main/OWNERS
+  - name: hydrophone
+    description: |
+      Hydrophone is a lightweight Kubernetes conformance tests runner
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/hydrophone/main/OWNERS
   - name: kind
     description: |
       Kubernetes IN Docker. Run Kubernetes test clusters on your local machine using Docker containers as nodes.
@@ -3014,6 +3068,12 @@ sigs:
       Miscellaneous tools and configuration to run the testing infrastructure for the Kubernetes project
     owners:
     - https://raw.githubusercontent.com/kubernetes/test-infra/master/OWNERS
+  - name: testgrid
+    description: |
+      Welcome to TestGrid, a highly-configurable, interactive dashboard for viewing your test results in a grid!
+      This hosts Kubernetes-related projects for TestGrid (currently, the new frontend). See https://github.com/GoogleCloudPlatform/testgrid for the main repository (currently, backend components).
+    owners:
+    - https://raw.githubusercontent.com/kubernetes-sigs/testgrid/main/OWNERS
   - name: testing-commons
     description: |
       **[best-effort]** The testing-commons subproject focuses on matters of code structure, layout, and execution of kubernetes/kubernetes test code. It is currently staffed on a best-effort basis; please bring discussions to the sig-testing slack channel or meeting. For historical context, please see the [former testing-commons meeting agenda](https://docs.google.com/document/d/1TOC8vnmlkWw6HRNHoe5xSv5-qv7LelX6XK3UVCHuwb0/edit) and [archived testing-commons slack channel](https://kubernetes.slack.com/archives/C9NK9KFFW)
@@ -3076,7 +3136,7 @@ sigs:
     chairs:
     - github: aravindhp
       name: Aravindh Puthiyaparambil
-      company: Red Hat
+      company: Softdrive Technologies Group Inc.
     - github: marosset
       name: Mark Rossetti
       company: Microsoft
@@ -3084,12 +3144,12 @@ sigs:
     - github: claudiubelu
       name: Claudiu Belu
       company: Cloudbase Solutions
-    - github: jayunit100
-      name: Jay Vyas
-      company: VMware
     - github: jsturtevant
       name: James Sturtevant
       company: Microsoft
+    - github: knabben
+      name: Amim Knabben
+      company: VMware
     - github: marosset
       name: Mark Rossetti
       company: Microsoft
@@ -3100,6 +3160,8 @@ sigs:
       name: Ben Moss
     - github: ddebroy
       name: Deep Debroy
+    - github: jayunit100
+      name: Jay Vyas
     - github: michmike
       name: Michael Michael
   meetings:
@@ -3209,27 +3271,39 @@ workinggroups:
   label: batch
   leadership:
     chairs:
-    - github: Huang-Wei
-      name: Wei Huang
-      company: Apple
-    - github: ahg-g
-      name: Abdullah Gharaibeh
+    - github: alculquicondor
+      name: Aldo Culquicondor
       company: Google
-    - github: endocrimes
-      name: Danielle Lancashire
-      company: Independent
+    - github: mwielgus
+      name: Marcin Wielgus
+      company: Google
     - github: soltysh
       name: Maciej Szulik
       company: Red Hat
     - github: swatisehgal
       name: Swati Sehgal
       company: Red Hat
+    emeritus_leads:
+    - github: Huang-Wei
+      name: Wei Huang
+    - github: ahg-g
+      name: Abdullah Gharaibeh
+    - github: endocrimes
+      name: Danielle Lancashire
   meetings:
   - description: Regular Meeting ([Calendar](https://calendar.google.com/calendar/embed?src=8ulop9k0jfpuo0t7kp8d9ubtj4%40group.calendar.google.com))
-    day: Thursdays (starting March 3rd 2022)
-    time: 7AM
+    day: Thursdays (starting February 15th 2024)
+    time: 3PM
+    tz: CET (Central European Time)
+    frequency: monthly
+    url: https://zoom.us/j/98329676612?pwd=c0N2bVV1aTh2VzltckdXSitaZXBKQT09
+    archive_url: https://docs.google.com/document/d/1XOeUN-K0aKmJJNq7H07r74n-mGgSFyiEDQ3ecwsGhec/edit
+    recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP1U1eU1NPyflIGmwzcXPsev
+  - description: Regular Meeting ([Calendar](https://calendar.google.com/calendar/embed?src=8ulop9k0jfpuo0t7kp8d9ubtj4%40group.calendar.google.com))
+    day: Thursdays (starting February 1st 2024)
+    time: 3PM
     tz: PT (Pacific Time)
-    frequency: biweekly
+    frequency: monthly
     url: https://zoom.us/j/98329676612?pwd=c0N2bVV1aTh2VzltckdXSitaZXBKQT09
     archive_url: https://docs.google.com/document/d/1XOeUN-K0aKmJJNq7H07r74n-mGgSFyiEDQ3ecwsGhec/edit
     recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP1U1eU1NPyflIGmwzcXPsev
@@ -3279,48 +3353,45 @@ workinggroups:
     liaison:
       github: pohly
       name: Patrick Ohly
-- dir: wg-iot-edge
-  name: IoT Edge
+- dir: wg-device-management
+  name: Device Management
   mission_statement: >
-    A Working Group dedicated to discussing, designing and documenting using Kubernetes
-    for developing and deploying IoT and Edge specific applications
+    Enable simple and efficient configuration, sharing, and allocation of accelerators
+    and other specialized devices.
 
+    [Additional context](https://groups.google.com/a/kubernetes.io/g/dev/c/YWXGXe07A5w/m/OqLvdQ47BQAJ)
+
+  charter_link: charter.md
   stakeholder_sigs:
-  - Multicluster
+  - Architecture
+  - Autoscaling
   - Network
-  label: iot-edge
+  - Node
+  - Scheduling
+  label: device-management
   leadership:
     chairs:
-    - github: cantbewong
-      name: Steve Wong
-      company: VMware
-    - github: cindyxing
-      name: Cindy Xing
-      company: Microsoft
-    - github: dejanb
-      name: Dejan Bosanac
-      company: Red Hat
-    emeritus_leads:
-    - github: ptone
-      name: Preston Holmes
+    - github: johnbelamaric
+      name: John Belamaric
+      company: Google
+    - github: klueska
+      name: Kevin Klues
+      company: NVIDIA
+    - github: pohly
+      name: Patrick Ohly
+      company: Intel
   meetings:
-  - description: APAC WG Meeting
-    day: Wednesday
-    time: "5:00"
-    tz: UTC
-    frequency: every four weeks
-    url: https://zoom.us/j/91251176046?pwd=cmdqclovM3R3eDB1VlpuL1ZGU1hnZz09
-    archive_url: https://docs.google.com/document/d/1Yuwy9IO4X6XKq2wLW0pVZn5yHQxlyK7wdYBZBXRWiKI/edit?usp=sharing
-  - description: Regular WG Meeting (Pacific Time)
-    day: Wednesday
-    time: "09:00"
-    tz: PT
-    frequency: every four weeks
-    url: https://zoom.us/j/92778512626?pwd=MXhlemwvYnhkQmkxeXllQ0Z5VGs4Zz09
-    archive_url: https://docs.google.com/document/d/1Yuwy9IO4X6XKq2wLW0pVZn5yHQxlyK7wdYBZBXRWiKI/edit?usp=sharing
+  - description: Regular WG Meeting
+    day: Tuesday
+    time: "8:30"
+    tz: PT (Pacific Time)
+    frequency: biweekly
+    url: TBD
+    archive_url: https://docs.google.com/document/d/1qxI87VqGtgN7EAJlqVfxx86HGKEAc2A3SKru8nJHNkQ/edit?usp=sharing
+    recordings_url: TBD
   contact:
-    slack: wg-iot-edge
-    mailing_list: https://groups.google.com/forum/#!forum/kubernetes-wg-iot-edge
+    slack: wg-device-management
+    mailing_list: https://groups.google.com/a/kubernetes.io/g/wg-device-management
     liaison:
       github: pohly
       name: Patrick Ohly
@@ -3361,7 +3432,7 @@ workinggroups:
     frequency: biweekly
     url: https://zoom.us/j/92480197536?pwd=dmtSMGJRQmNYYTIyZkFlQ25JRngrdz09
     archive_url: https://docs.google.com/document/d/1RI_EL35MwQxrHqlWvtQNINhOSWergL3hmOSgC5PeZss/edit
-    recordings_url: TBD
+    recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP13_zDqYfUjfLZ2Lu9a3pv-
   contact:
     slack: wg-lts
     mailing_list: https://groups.google.com/a/kubernetes.io/g/wg-lts
@@ -3390,9 +3461,15 @@ workinggroups:
     - github: JimBugwadia
       name: Jim Bugwadia
       company: Kyverno/Nirmata
+    - github: poonam-lamba
+      name: Poonam Lamba
+      company: Google
+    - github: sudermanjr
+      name: Andy Suderman
+      company: Fairwinds
+    emeritus_leads:
     - github: rficcaglia
       name: Robert Ficcaglia
-      company: SunStone
   meetings:
   - description: Regular WG Meeting
     day: Wednesday
@@ -3407,6 +3484,50 @@ workinggroups:
     liaison:
       github: pohly
       name: Patrick Ohly
+- dir: wg-serving
+  name: Serving
+  mission_statement: >
+    Discuss and enhance the support of inference serving for accelerated workloads
+    in Kubernetes. Make Kubernetes the natural choice for hosting production inference
+    reliably, and improve all serving workloads along the way.
+
+  charter_link: charter.md
+  stakeholder_sigs:
+  - Apps
+  - Architecture
+  - Autoscaling
+  - Instrumentation
+  - Network
+  - Node
+  - Scheduling
+  - Storage
+  label: serving
+  leadership:
+    chairs:
+    - github: ArangoGutierrez
+      name: Eduardo Arango
+      company: NVIDIA
+    - github: SergeyKanzhelev
+      name: Sergey Kanzhelev
+      company: Google
+    - github: terrytangyuan
+      name: Yuan Tang
+      company: Red Hat
+  meetings:
+  - description: WG Serving weekly meeting ([Calendar](https://calendar.google.com/calendar/embed?src=e896b769743f3877edfab2d4c6a14132b2aa53287021e9bbf113cab676da54ba%40group.calendar.google.com))
+    day: Wednesday
+    time: 9:00 AM
+    tz: PT (Pacific Time)
+    frequency: weekly
+    url: https://zoom.us/j/93517402529?pwd=RnkwUUQ4L3J2QmNYYlNBcnZGbXcvQT09
+    archive_url: https://docs.google.com/document/d/1aExJFtaLnO-TM6_2uILgI8NI0IjOm7FcwLABBKEMEo0/edit
+    recordings_url: https://www.youtube.com/playlist?list=TODO
+  contact:
+    slack: wg-serving
+    mailing_list: https://groups.google.com/a/kubernetes.io/g/wg-serving
+    liaison:
+      github: soltysh
+      name: Maciej Szulik
 - dir: wg-structured-logging
   name: Structured Logging
   mission_statement: >
@@ -3426,21 +3547,13 @@ workinggroups:
   label: structured-logging
   leadership:
     chairs:
+    - github: mengjiao-liu
+      name: Mengjiao Liu
+      company: DaoCloud
     - github: pohly
       name: Patrick Ohly
       company: Intel
-    - github: serathius
-      name: Marek Siarkowicz
-      company: Google
-  meetings:
-  - description: Regular Meeting
-    day: Thursday
-    time: "15:30"
-    tz: London-UK
-    frequency: biweekly
-    url: https://zoom.us/j/96716142646?pwd=VmgrN29sbmhDREp3R0NtZlpGSlZ4Zz09
-    archive_url: https://docs.google.com/document/d/1R9bZ34L9vR1ftH0dFeOp-j50lLh5ijKVwwXJ3LDrY4I/edit?usp=sharing
-    recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP2GY3so1z2Cnkvkt5A_x1Aw
+  meetings: []
   contact:
     slack: wg-structured-logging
     mailing_list: https://groups.google.com/forum/#!forum/kubernetes-wg-structured-logging
@@ -3609,8 +3722,8 @@ committees:
     url: https://bit.ly/k8s-steering-wd
     recordings_url: https://www.youtube.com/watch?v=YAzgJRQxsdc&list=PL69nYSiGNLP1yP1B_nd9-drjoxp0Q14qM
   - description: Public Steering Committee Meeting
-    day: first Monday
-    time: "9:30"
+    day: first Wednesday
+    time: "8:00"
     tz: PT (Pacific Time)
     frequency: monthly
     url: https://bit.ly/k8s-steering-wd
@@ -3623,11 +3736,7 @@ committees:
     - name: steering-committee
       description: General Discussion
   subprojects:
-  - name: funding
-    description: Funding requests for project infrastructure, events, and consulting
-    owners:
-    - https://raw.githubusercontent.com/kubernetes/funding/master/OWNERS
   - name: steering
-    description: Steering Committee policy and documentation
+    description: Steering Committee policies, documentation, and funding requests
     owners:
     - https://raw.githubusercontent.com/kubernetes/steering/master/OWNERS

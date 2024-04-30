@@ -68,11 +68,15 @@ The following [working groups][working-group-definition] are sponsored by sig-re
 The following [subprojects][subproject-definition] are owned by sig-release:
 ### Release Engineering
 The Release Engineering subproject is responsible for the [process/procedures](https://github.com/kubernetes/sig-release/tree/master/release-engineering) and [tools](https://github.com/kubernetes/release) used to create/maintain Kubernetes release artifacts.
+- **Leads:**
+  - Marko Mudrinić (**[@xmudrii](https://github.com/xmudrii)**), Kubermatic
 - **Owners:**
   - [kubernetes-sigs/bom](https://github.com/kubernetes-sigs/bom/blob/main/OWNERS)
   - [kubernetes-sigs/downloadkubernetes](https://github.com/kubernetes-sigs/downloadkubernetes/blob/master/OWNERS)
   - [kubernetes-sigs/mdtoc](https://github.com/kubernetes-sigs/mdtoc/blob/master/OWNERS)
+  - [kubernetes-sigs/obscli](https://github.com/kubernetes-sigs/obscli/blob/master/OWNERS)
   - [kubernetes-sigs/promo-tools](https://github.com/kubernetes-sigs/promo-tools/blob/main/OWNERS)
+  - [kubernetes-sigs/release-actions](https://github.com/kubernetes-sigs/release-actions/blob/master/OWNERS)
   - [kubernetes-sigs/release-notes](https://github.com/kubernetes-sigs/release-notes/blob/master/OWNERS)
   - [kubernetes-sigs/release-sdk](https://github.com/kubernetes-sigs/release-sdk/blob/main/OWNERS)
   - [kubernetes-sigs/release-utils](https://github.com/kubernetes-sigs/release-utils/blob/main/OWNERS)
@@ -101,6 +105,9 @@ The Release Engineering subproject is responsible for the [process/procedures](h
     - [@kubernetes/repo-infra-maintainers](https://github.com/orgs/kubernetes/teams/repo-infra-maintainers)
 ### Release Team
 The Kubernetes Release Team is responsible for the day-to-day work required to successfully create releases of Kubernetes.
+- **Leads:**
+  - Grace Nguyen (**[@gracenng](https://github.com/gracenng)**)
+  - Kat Cosgrove (**[@katcosgrove](https://github.com/katcosgrove)**), Dell
 - **Owners:**
   - [kubernetes-sigs/release-team-shadow-stats](https://github.com/kubernetes-sigs/release-team-shadow-stats/blob/main/OWNERS)
   - [kubernetes/sig-release/release-team](https://github.com/kubernetes/sig-release/blob/master/release-team/OWNERS)

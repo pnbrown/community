@@ -3,6 +3,7 @@ aliases:
     - deads2k
     - fedebongio
     - jpbetz
+    - sttts
   sig-apps-leads:
     - janetkuo
     - kow3ns
@@ -19,11 +20,11 @@ aliases:
     - ritazh
   sig-autoscaling-leads:
     - gjtempleton
-    - mwielgus
+    - maciekpytel
   sig-cli-leads:
-    - KnVerey
+    - ardaguclu
     - eddiezane
-    - natasha41575
+    - mpuckett159
     - soltysh
   sig-cloud-provider-leads:
     - andrewsykim
@@ -32,7 +33,6 @@ aliases:
     - elmiko
     - nckturner
   sig-cluster-lifecycle-leads:
-    - CecileRobertMichon
     - fabriziopandini
     - justinsb
     - neolit123
@@ -40,17 +40,11 @@ aliases:
   sig-contributor-experience-leads:
     - MadhavJivrajani
     - Priyankasaggu11929
-    - cblecker
-    - jberkus
     - kaslin
-    - mrbobbytables
-    - nikhita
     - palnabarun
   sig-docs-leads:
     - divya-mohan0209
-    - kbhawkey
     - natalisucks
-    - onlydole
     - reylejano
     - sftim
     - tengqm
@@ -62,17 +56,18 @@ aliases:
   sig-instrumentation-leads:
     - dashpole
     - dgrisonnet
-    - ehashman
     - logicalhan
+    - rexagod
   sig-k8s-infra-leads:
+    - BenTheElder
     - ameukam
     - dims
-    - spiffxp
-    - thockin
+    - upodroid
   sig-multicluster-leads:
     - jeremyot
     - pmorie
   sig-network-leads:
+    - aojea
     - danwinship
     - mikezappa87
     - shaneutt
@@ -121,35 +116,39 @@ aliases:
   sig-windows-leads:
     - aravindhp
     - claudiubelu
-    - jayunit100
     - jsturtevant
+    - knabben
     - marosset
   wg-api-expression-leads:
     - apelisse
     - kwiesmueller
   wg-batch-leads:
-    - Huang-Wei
-    - ahg-g
-    - endocrimes
+    - alculquicondor
+    - mwielgus
     - soltysh
     - swatisehgal
   wg-data-protection-leads:
     - xing-yang
     - yuxiangqian
-  wg-iot-edge-leads:
-    - cantbewong
-    - cindyxing
-    - dejanb
+  wg-device-management-leads:
+    - johnbelamaric
+    - klueska
+    - pohly
   wg-lts-leads:
     - jeremyrickard
     - liggitt
     - micahhausler
   wg-policy-leads:
     - JimBugwadia
-    - rficcaglia
+    - poonam-lamba
+    - sudermanjr
+  wg-serving-leads:
+    - ArangoGutierrez
+    - SergeyKanzhelev
+    - terrytangyuan
   wg-structured-logging-leads:
+    - mengjiao-liu
     - pohly
-    - serathius
   committee-code-of-conduct:
     - AnaMMedina21
     - endocrimes

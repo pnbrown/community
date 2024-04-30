@@ -42,6 +42,8 @@ The primary objectives of the e2e tests are to ensure a consistent and reliable
 behavior of the Kubernetes code base, and to catch hard-to-test bugs before
 users do, when unit and integration tests are insufficient.
 
+**NOTE:** If you want test against a cluster, you can use `test/e2e` framework. This page is written about `test/e2e`. If you want to test the `kubelet` code, you can use `test/e2e_node` framework. If you want to know `test/e2e_node` , please see the [e2e-node-tests](../sig-node/e2e-node-tests.md).
+
 The e2e tests in Kubernetes are built atop of
 [Ginkgo](http://onsi.github.io/ginkgo/) and
 [Gomega](http://onsi.github.io/gomega/). There are a host of features that this
@@ -608,7 +610,7 @@ In time, it is our intent to add or autogenerate a sample viper configuration th
 
 With introducing Pod Security admission in Kubernetes by default, it is desired to execute e2e tests within bounded pod security policy levels. The default pod security policy in e2e tests is [restricted](https://kubernetes.io/docs/concepts/security/pod-security-admission/#pod-security-levels). This is set in https://github.com/kubernetes/kubernetes/blob/master/test/e2e/framework/framework.go. This ensures that e2e tests follow best practices for hardening pods by default.
 
-Two helper functions are available for returning a minimal [restricted pod security context](https://github.com/kubernetes/kubernetes/blob/d7e6eab87d0fd005b238e3ec9b088e37d41a15d3/test/e2e/framework/pod/utils.go#L119) and a [restricted container security context](https://github.com/kubernetes/kubernetes/blob/d7e6eab87d0fd005b238e3ec9b088e37d41a15d3/test/e2e/framework/pod/utils.go#L127). These can be used to initialize pod or container specs to ensure adherence for the most restricted pod security policy.
+Two helper functions are available for returning a minimal [restricted pod security context](https://github.com/kubernetes/kubernetes/blob/c876b30c2b30c0355045d7548c22b6cd42ab58da/test/e2e/framework/pod/utils.go#L156) and a [restricted container security context](https://github.com/kubernetes/kubernetes/blob/c876b30c2b30c0355045d7548c22b6cd42ab58da/test/e2e/framework/pod/utils.go#L172). These can be used to initialize pod or container specs to ensure adherence for the most restricted pod security policy.
 
 If pods need to elevate privileges to either `baseline` or `privileged` a new field - `NamespacePodSecurityEnforceLevel` - was introduced to the e2e framework to specify the necessary namespace enforcement level. Note that namespaces get created in the `BeforeEach()` phase of ginkgo tests.
 
@@ -640,7 +642,7 @@ A quick overview of how we run e2e CI on Kubernetes.
 
 ### What is CI?
 
-We run a battery of [release-blocking jobs](https://k8s-testgrid.appspot.com/sig-release-master-blocking)
+We run a battery of [release-blocking jobs](https://testgrid.k8s.io/sig-release-master-blocking)
 against `HEAD` of the master branch on a continuous basis, and block merges
 via [Tide](https://git.k8s.io/test-infra/prow/cmd/tide) on a subset of those
 tests if they fail.

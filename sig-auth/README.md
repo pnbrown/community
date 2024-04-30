@@ -38,8 +38,8 @@ The Technical Leads of the SIG establish new subprojects, decommission existing
 subprojects, and resolve cross-subproject technical issues and decisions.
 
 * David Eads (**[@deads2k](https://github.com/deads2k)**), Red Hat
+* Mo Khan (**[@enj](https://github.com/enj)**), Microsoft
 * Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**), Google
-* Mike Danese (**[@mikedanese](https://github.com/mikedanese)**), Google
 
 ## Emeritus Leads
 
@@ -156,6 +156,10 @@ Integrates secrets stores with Kubernetes via a CSI volume.
 - **Contact:**
   - Slack: [#csi-secrets-store](https://kubernetes.slack.com/messages/csi-secrets-store)
   - [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-secrets-store-csi-driver)
+### secrets-store-sync-controller
+This is a Kubernetes controller that watches for changes to a custom resource and syncs the secrets from external secrets-store as Kubernetes secret.
+- **Owners:**
+  - [kubernetes-sigs/secrets-store-sync-controller](https://github.com/kubernetes-sigs/secrets-store-sync-controller/blob/main/OWNERS)
 ### service-accounts
 Infrastructure implementing Kubernetes service account based workload identity.
 - **Owners:**

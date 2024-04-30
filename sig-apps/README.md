@@ -59,6 +59,7 @@ subprojects, and resolve cross-subproject technical issues and decisions.
 The following [working groups][working-group-definition] are sponsored by sig-apps:
 * [WG Batch](/wg-batch)
 * [WG Data Protection](/wg-data-protection)
+* [WG Serving](/wg-serving)
 
 
 ## Subprojects
@@ -83,6 +84,7 @@ Application metadata descriptor CRD
 The core workloads API, which is composed of the CronJob, DaemonSet, Deployment, Job, ReplicaSet, ReplicationController, PodDisruptionBudget and StatefulSet kinds
 - **Owners:**
   - [kubernetes-sigs/jobset](https://github.com/kubernetes-sigs/jobset/blob/main/OWNERS)
+  - [kubernetes-sigs/lws](https://github.com/kubernetes-sigs/lws/blob/main/OWNERS)
   - [kubernetes/kubernetes/pkg/apis/apps](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/apps/OWNERS)
   - [kubernetes/kubernetes/pkg/apis/batch](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/batch/OWNERS)
   - [kubernetes/kubernetes/pkg/apis/core/v1](https://github.com/kubernetes/kubernetes/blob/master/pkg/apis/core/v1/OWNERS)

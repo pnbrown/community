@@ -46,6 +46,7 @@ The Chairs of the SIG run operations and processes governing the SIG.
 The Technical Leads of the SIG establish new subprojects, decommission existing
 subprojects, and resolve cross-subproject technical issues and decisions.
 
+* Antonio Ojea (**[@aojea](https://github.com/aojea)**), Google
 * Dan Winship (**[@danwinship](https://github.com/danwinship)**), Red Hat
 * Tim Hockin (**[@thockin](https://github.com/thockin)**), Google
 
@@ -71,8 +72,9 @@ subprojects, and resolve cross-subproject technical issues and decisions.
 ## Working Groups
 
 The following [working groups][working-group-definition] are sponsored by sig-network:
-* [WG IoT Edge](/wg-iot-edge)
+* [WG Device Management](/wg-device-management)
 * [WG Policy](/wg-policy)
+* [WG Serving](/wg-serving)
 * [WG Structured Logging](/wg-structured-logging)
 
 
@@ -108,6 +110,9 @@ The following [subprojects][subproject-definition] are owned by sig-network:
 ### iptables-wrappers
 - **Owners:**
   - [kubernetes-sigs/iptables-wrappers](https://github.com/kubernetes-sigs/iptables-wrappers/blob/master/OWNERS)
+### knftables
+- **Owners:**
+  - [kubernetes-sigs/knftables](https://github.com/kubernetes-sigs/knftables/blob/master/OWNERS)
 ### kpng
 - **Owners:**
   - [kubernetes-sigs/kpng](https://github.com/kubernetes-sigs/kpng/blob/master/OWNERS)
@@ -116,10 +121,14 @@ The following [subprojects][subproject-definition] are owned by sig-network:
   - [kubernetes/dns](https://github.com/kubernetes/dns/blob/master/OWNERS)
 ### network-policy
 - **Owners:**
+  - [kubernetes-sigs/kube-network-policies](https://github.com/kubernetes-sigs/kube-network-policies/blob/master/OWNERS)
   - [kubernetes-sigs/network-policy-api](https://github.com/kubernetes-sigs/network-policy-api/blob/master/OWNERS)
   - [kubernetes/api/networking](https://github.com/kubernetes/api/blob/master/networking/OWNERS)
 - **Contact:**
   - Slack: [#sig-network-policy-api](https://kubernetes.slack.com/messages/sig-network-policy-api)
+### node-ipam-controller
+- **Owners:**
+  - [kubernetes-sigs/node-ipam-controller](https://github.com/kubernetes-sigs/node-ipam-controller/blob/main/OWNERS)
 ### pod-networking
 - **Owners:**
   - [kubernetes-sigs/ip-masq-agent](https://github.com/kubernetes-sigs/ip-masq-agent/blob/master/OWNERS)

@@ -31,11 +31,11 @@ The Chairs of the SIG run operations and processes governing the SIG.
 The Technical Leads of the SIG establish new subprojects, decommission existing
 subprojects, and resolve cross-subproject technical issues and decisions.
 
-* Cecile Robert-Michon (**[@CecileRobertMichon](https://github.com/CecileRobertMichon)**), Microsoft
 * Fabrizio Pandini (**[@fabriziopandini](https://github.com/fabriziopandini)**), VMware
 
 ## Emeritus Leads
 
+* Cecile Robert-Michon (**[@CecileRobertMichon](https://github.com/CecileRobertMichon)**)
 * Lucas Käldström (**[@luxas](https://github.com/luxas)**)
 * Robert Bailey (**[@roberthbailey](https://github.com/roberthbailey)**)
 * Timothy St. Clair (**[@timothysc](https://github.com/timothysc)**)
@@ -71,12 +71,13 @@ A project for figuring out the best way to install, manage and deliver cluster a
 A project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters
 - **Owners:**
   - [kubernetes-sigs/cluster-api](https://github.com/kubernetes-sigs/cluster-api/blob/main/OWNERS)
+  - [kubernetes-sigs/logical-cluster](https://github.com/kubernetes-sigs/logical-cluster/blob/main/OWNERS)
 - **Contact:**
   - Slack: [#cluster-api](https://kubernetes.slack.com/messages/cluster-api)
   - [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle)
 - **Meetings:**
   - Cluster API office hours: [Wednesdays at 10:00 PT (Pacific Time)](https://zoom.us/j/861487554?pwd=dTVGVVFCblFJc0VBbkFqQlU0dHpiUT09) (weekly). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=PT%20%28Pacific%20Time%29).
-    - [Meeting notes and Agenda](https://docs.google.com/document/d/1ushaVqAKYnZ2VN_aa3GyKlS4kEd6bSug13xaXOakAQI/edit).
+    - [Meeting notes and Agenda](https://cluster-api.sigs.k8s.io/agenda).
     - [Meeting recordings](https://www.youtube.com/playlist?list=PL69nYSiGNLP29D0nYgAGWt1ZFqS9Z7lw4).
 ### cluster-api-addon-provider-helm
 Implementation of Cluster Add-on Provider for Helm, an add-on orchestration solution for Cluster API using Helm.
@@ -205,7 +206,7 @@ Cluster API infrastructure provider for vSphere
   - [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle)
 - **Meetings:**
   - Cluster API vSphere meeting: [Thursdays at 10:00 PT (Pacific Time)](https://zoom.us/j/92253194848?pwd=cVVVNDMxeTl1QVJPUlpvLzNSVU1JZz09) (biweekly starting Thursday June 25th, 2020). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=PT%20%28Pacific%20Time%29).
-    - [Meeting notes and Agenda](https://docs.google.com/document/d/1jQrQiOW75uWraPk4b_LWtCTHwT7EZwrWWwMdxeWOEvk/edit?usp=sharing).
+    - [Meeting notes and Agenda](https://docs.google.com/document/d/15CD2VOdkCAEcq2mm5FVoPO8M4-0a2SA2ajHLFBYqz7c/edit?usp=sharing).
     - [Meeting recordings](https://www.youtube.com/playlist?list=PLutJyDdkKQIovV-AONxMa2cyv-_5LAYiu).
 ### etcdadm
 A command-line tool for operating etcd clusters
@@ -264,10 +265,6 @@ A project that uses Ansible / Vagrant for deploying production ready clusters on
 - **Contact:**
   - Slack: [#kubespray](https://kubernetes.slack.com/messages/kubespray)
   - [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-sig-cluster-lifecycle)
-### logical-cluster
-A set of APIs to improve the Kubernetes user experience for cluster administration by offering utilities to interact with fleet of clusters which can be managed by Cluster API, or other entities (like cloud providers).
-- **Owners:**
-  - [kubernetes-sigs/logical-cluster](https://github.com/kubernetes-sigs/logical-cluster/blob/main/OWNERS)
 ### minikube
 Implements a local Kubernetes cluster for application development on macOS, Linux, and Windows
 - **Owners:**

@@ -14,6 +14,7 @@ The [charter](charter.md) defines the scope and governance of the Testing Specia
 
 ## Meetings
 *Joining the [mailing list](https://groups.google.com/forum/#!forum/kubernetes-sig-testing) for the group will typically add invites for the following meetings to your calendar.*
+* Hydrophone Office Hours: [Tuesdays at 13:00 PT (Pacific Time)](https://zoom.us/j/92022289212?pwd=VU5UWEtuU3ZYTmlYS3hSU3hLbTA0Zz09) (bi-weekly starting Tuesday April 16, 2024). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=13:00&tz=PT%20%28Pacific%20Time%29).
 * SIG Testing Bi-Weekly Meeting: [Tuesdays at 10:00 PT (Pacific Time)](https://zoom.us/j/135450138?pwd=WGJyaVZzekJCWFBTMGJGTXVjUFJaUT09) (bi-weekly starting Tuesday August 13, 2019). [Convert to your timezone](http://www.thetimezoneconverter.com/?t=10:00&tz=PT%20%28Pacific%20Time%29).
   * [Meeting notes and Agenda](https://bit.ly/k8s-sig-testing-notes).
   * [Meeting recordings](https://bit.ly/k8s-sig-testing-videos).
@@ -75,6 +76,10 @@ Boskos is a resource manager service that handles different kinds of resources a
 An experimental e2e testing framework for Kubernetes clusters.
 - **Owners:**
   - [kubernetes-sigs/e2e-framework](https://github.com/kubernetes-sigs/e2e-framework/blob/main/OWNERS)
+### hydrophone
+Hydrophone is a lightweight Kubernetes conformance tests runner
+- **Owners:**
+  - [kubernetes-sigs/hydrophone](https://github.com/kubernetes-sigs/hydrophone/blob/main/OWNERS)
 ### kind
 Kubernetes IN Docker. Run Kubernetes test clusters on your local machine using Docker containers as nodes.
 - **Owners:**
@@ -102,6 +107,11 @@ Home for SIG Testing discussion and documents.
 Miscellaneous tools and configuration to run the testing infrastructure for the Kubernetes project
 - **Owners:**
   - [kubernetes/test-infra](https://github.com/kubernetes/test-infra/blob/master/OWNERS)
+### testgrid
+Welcome to TestGrid, a highly-configurable, interactive dashboard for viewing your test results in a grid!
+This hosts Kubernetes-related projects for TestGrid (currently, the new frontend). See https://github.com/GoogleCloudPlatform/testgrid for the main repository (currently, backend components).
+- **Owners:**
+  - [kubernetes-sigs/testgrid](https://github.com/kubernetes-sigs/testgrid/blob/main/OWNERS)
 ### testing-commons
 **[best-effort]** The testing-commons subproject focuses on matters of code structure, layout, and execution of kubernetes/kubernetes test code. It is currently staffed on a best-effort basis; please bring discussions to the sig-testing slack channel or meeting. For historical context, please see the [former testing-commons meeting agenda](https://docs.google.com/document/d/1TOC8vnmlkWw6HRNHoe5xSv5-qv7LelX6XK3UVCHuwb0/edit) and [archived testing-commons slack channel](https://kubernetes.slack.com/archives/C9NK9KFFW)
 - **Owners:**

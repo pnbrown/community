@@ -23,7 +23,11 @@ The [charter](charter.md) defines the scope and governance of the Autoscaling Sp
 The Chairs of the SIG run operations and processes governing the SIG.
 
 * Guy Templeton (**[@gjtempleton](https://github.com/gjtempleton)**), Skyscanner
-* Marcin Wielgus (**[@mwielgus](https://github.com/mwielgus)**), Google
+* Maciek Pytel (**[@maciekpytel](https://github.com/maciekpytel)**), Google
+
+## Emeritus Leads
+
+* Marcin Wielgus (**[@mwielgus](https://github.com/mwielgus)**)
 
 ## Contact
 - Slack: [#sig-autoscaling](https://kubernetes.slack.com/messages/sig-autoscaling)
@@ -43,6 +47,8 @@ The Chairs of the SIG run operations and processes governing the SIG.
 
 The following [working groups][working-group-definition] are sponsored by sig-autoscaling:
 * [WG Batch](/wg-batch)
+* [WG Device Management](/wg-device-management)
+* [WG Serving](/wg-serving)
 
 
 ## Subprojects
@@ -58,6 +64,9 @@ The following [subprojects][subproject-definition] are owned by sig-autoscaling:
 - **Owners:**
   - [kubernetes/api/autoscaling](https://github.com/kubernetes/api/blob/master/autoscaling/OWNERS)
   - [kubernetes/kubernetes/pkg/controller/podautoscaler](https://github.com/kubernetes/kubernetes/blob/master/pkg/controller/podautoscaler/OWNERS)
+### karpenter
+- **Owners:**
+  - [kubernetes-sigs/karpenter](https://github.com/kubernetes-sigs/karpenter/blob/main/OWNERS)
 ### vertical-pod-autoscaler
 - **Owners:**
   - [kubernetes/autoscaler/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/blob/master/vertical-pod-autoscaler/OWNERS)

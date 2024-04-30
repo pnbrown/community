@@ -46,10 +46,14 @@ subprojects, and resolve cross-subproject technical issues and decisions.
 ## Subprojects
 
 The following [subprojects][subproject-definition] are owned by sig-etcd:
+### auger
+Directly access data objects stored in etcd by kubernetes.
+- **Owners:**
+  - [etcd-io/auger](https://github.com/etcd-io/auger/blob/master/OWNERS)
 ### bbolt
 An embedded key/value database for Go.
 - **Owners:**
-  - [etcd-io/bbolt/MAINTAINERS](https://github.com/etcd-io/bbolt/blob/master/MAINTAINERS)
+  - [etcd-io/bbolt](https://github.com/etcd-io/bbolt/blob/main/OWNERS)
 ### cetcd
 Serve Consul with etcd
 - **Owners:**
@@ -61,15 +65,15 @@ Distributed database benchmark tester
 ### discovery.etcd.io
 Kubernetes manifests powering discovery.etcd.io
 - **Owners:**
-  - [etcd-io/discovery.etcd.io/MAINTAINERS](https://github.com/etcd-io/discovery.etcd.io/blob/master/MAINTAINERS)
+  - [etcd-io/discovery.etcd.io](https://github.com/etcd-io/discovery.etcd.io/blob/master/OWNERS)
 ### discoveryserver
 Public etcd Discovery Service
 - **Owners:**
-  - [etcd-io/discoveryserver/MAINTAINERS](https://github.com/etcd-io/discoveryserver/blob/master/MAINTAINERS)
+  - [etcd-io/discoveryserver](https://github.com/etcd-io/discoveryserver/blob/master/OWNERS)
 ### etcd
 Distributed reliable key-value store for the most critical data of a distributed system
 - **Owners:**
-  - [etcd-io/etcd/MAINTAINERS](https://github.com/etcd-io/etcd/blob/master/MAINTAINERS)
+  - [etcd-io/etcd](https://github.com/etcd-io/etcd/blob/main/OWNERS)
 ### etcd-play
 etcd playground
 - **Owners:**
@@ -81,15 +85,15 @@ etcd playground
 ### gofail
 failpoints for go
 - **Owners:**
-  - [etcd-io/gofail/MAINTAINERS](https://github.com/etcd-io/gofail/blob/master/MAINTAINERS)
+  - [etcd-io/gofail](https://github.com/etcd-io/gofail/blob/master/OWNERS)
 ### govanityurls
 Use a custom domain in your Go import path
 - **Owners:**
-  - [etcd-io/govanityurls/MAINTAINERS](https://github.com/etcd-io/govanityurls/blob/master/MAINTAINERS)
+  - [etcd-io/govanityurls](https://github.com/etcd-io/govanityurls/blob/master/OWNERS)
 ### jetcd
 etcd java client
 - **Owners:**
-  - [etcd-io/jetcd/MAINTAINERS](https://github.com/etcd-io/jetcd/blob/master/MAINTAINERS)
+  - [etcd-io/jetcd](https://github.com/etcd-io/jetcd/blob/main/OWNERS)
 ### maintainers
 issue tracking for project wide non-code concerns
 - **Owners:**
@@ -97,15 +101,15 @@ issue tracking for project wide non-code concerns
 ### protodoc
 protodoc generates Protocol Buffer documentation.
 - **Owners:**
-  - [etcd-io/protodoc/MAINTAINERS](https://github.com/etcd-io/protodoc/blob/master/MAINTAINERS)
+  - [etcd-io/protodoc](https://github.com/etcd-io/protodoc/blob/master/OWNERS)
 ### raft
 Raft library for maintaining a replicated state machine
 - **Owners:**
-  - [etcd-io/raft/MAINTAINERS](https://github.com/etcd-io/raft/blob/master/MAINTAINERS)
+  - [etcd-io/raft](https://github.com/etcd-io/raft/blob/main/OWNERS)
 ### website
 etcd-io
 - **Owners:**
-  - [etcd-io/website/MAINTAINERS](https://github.com/etcd-io/website/blob/master/MAINTAINERS)
+  - [etcd-io/website](https://github.com/etcd-io/website/blob/main/OWNERS)
 ### zetcd
 Serve the Apache Zookeeper API but back it with an etcd cluster
 - **Owners:**

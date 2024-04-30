@@ -14,7 +14,6 @@ description: |
 - [How to Triage: A Step-by-Step Flow](#how-to-triage-a-step-by-step-flow)
    - [Triage-Related Tools](#triage-related-tools)
       - [Permissions and the Bot](#permissions-and-the-bot)
-      - [Gubernator](#gubernator)
       - [Triage Party](#triage-party)
       - [GitHub Project Boards](#github-project-boards)
       - [DevStats](#devstats)
@@ -79,10 +78,6 @@ These are tools that your SIG can use to make the triage process simpler, more e
 
 Opening new issues and leaving comments on other people's issues are possible for all contributors. However, permission to assign specific labels (such as `triage`), change milestones, or close other contributors issues is only granted to the author of an issue, assignees, and organization members. For this reason, we use a bot to manage labelling and triaging. For a full list of the bot's commands and permissions, see the [Prow command reference page](https://go.k8s.io/bot-commands).
 
-### Gubernator
-
-[Gubernator](https://gubernator.k8s.io/pr) offers a dashboard that tells you which pull requests are waiting for your feedback and which PRs are waiting for the contributor to respond. Please note that Gubernator only shows *pull requests*. You will not see which issues are assigned to you.
-
 ### Triage Party
 
 [Triage Party](https://github.com/google/triage-party) is a tool for triaging incoming GitHub issues for large open-source projects, built with the GitHub API. Made public in April 2020, it facilitates "massively multi-player GitHub triage" and reduces contributor response latency.
@@ -113,8 +108,8 @@ We encourage more SIGs to use project boards to enhance visibility and tracking.
 ### DevStats
 
 The CNCF has created a [suite of Grafana dashboards and charts](https://devstats.cncf.io/) for collecting metrics related to all the CNCF projects. The [Kubernetes dashboard](https://k8s.devstats.cncf.io/d/12/dashboards?orgId=1&refresh=15m) can be used to help SIGs view real-time metrics on many aspects of their workflow, including:
-- [Issue Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?orgId=1&from=1587157094179&to=1587758294179&refresh=15m&panelId=8&fullscreen): How quickly issues are resolved
-- [PR Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?orgId=1&from=1587157166022&to=1587758366022&refresh=15m&panelId=9&fullscreen): Including PR workload per SIG, PR time to approve and merge, and other data
+- [Issue Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?from=1587157094179&orgId=1&refresh=15m&to=1587758294179&viewPanel=8): How quickly issues are resolved
+- [PR Velocity](https://k8s.devstats.cncf.io/d/12/dashboards?from=1587157166022&orgId=1&refresh=15m&to=1587758366022&viewPanel=9): Including PR workload per SIG, PR time to approve and merge, and other data
 
 ## Process Pointers and Advice from SIGs
 
@@ -140,7 +135,7 @@ The api-machinery SIG has found that consistently meeting on a regular, fixed sc
 
 ### Triage Guide by cluster-lifecycle
 
-The cluster-lifecycle SIG has developed a [triaging page](/sig-cluster-lifecycle/grooming.md) detailing their process, including the [Milestones](#planning-milestones) stage. Here is a [March 2020 presentation](https://www.youtube.com/watch?v=Q07_PfkNjlw) delivered to the SIG chairs and leads group on their process.
+The cluster-lifecycle SIG has developed a [triaging page](/sig-cluster-lifecycle/grooming.md) detailing their process, including the [Milestones](/sig-cluster-lifecycle/grooming.md#planning-a-milestone) stage. Here is a [March 2020 presentation](https://www.youtube.com/watch?v=Q07_PfkNjlw) delivered to the SIG chairs and leads group on their process.
 
 ## Step One: Review Newly Created Open Issues
 
